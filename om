@@ -1,0 +1,122 @@
+import React from "react";
+import {
+  View,
+  Text,
+  Image,
+  Button,
+  StyleSheet,
+  ScrollView,
+  Alert,
+  TouchableOpacity,
+} from "react-native";
+<ScrollView style={{ flex: 1, backgroundColor: "black" }}>
+<View style={styles.profileSection}>
+        <TouchableOpacity>
+          <Image
+            source={require("../myCloneApp/assets/photos/groupphoto.jpg")}
+            style={styles.profilePic}
+          />
+        </TouchableOpacity>
+
+        <View>
+          <TouchableOpacity>
+            <Text style={styles.stats}>9</Text>
+            <Text style={styles.stats}>posts</Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity>
+            <Text style={styles.stats}>600k</Text>
+            <Text style={styles.stats}>followers</Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity>
+            <Text style={styles.stats}>0</Text>
+            <Text style={styles.stats}>following</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      <View>
+        <TouchableOpacity><Text style={styles.subText}>myCloneApp, React-native application</Text></TouchableOpacity>
+        <View style={styles.profileContainer}>
+          <Button
+            title="@react0705"
+            onPress={() => console.log("Instagram link pressed")}
+            color={"white"}
+          ></Button>
+        </View>
+      </View>
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginHorizontal: 10,
+        }}
+      >
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Edit profile</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={[styles.button, styles.secondaryButton]}>
+          <Text style={[styles.buttonText, styles.secondaryButtonText]}>
+            Share profile
+          </Text>
+        </TouchableOpacity>
+      </View>
+</ScrollView>
+const styles = StyleSheet.create({
+profileSection: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 20,
+    justifyContent: "space-around",
+  },
+profilePic: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    marginLeft: 10,
+  },
+stats: {
+    color: "white",
+    fontSize: 18,
+    marginVertical: 5,
+    fontWeight: "400",
+  },
+profileContainer: {
+    flexDirection: "row",
+    marginLeft: 20,
+  },
+subText: {
+    marginTop: 10,
+    color: "gray",
+    fontSize: 16,
+    marginLeft: 25,
+  },
+button: {
+      backgroundColor: "#fff",
+      paddingVertical: 12,
+      paddingHorizontal: 30,
+      borderRadius: 30,
+      marginVertical: 10,
+      width: "50%",
+      alignItems: "center",
+    },
+buttonText: {
+      color: "black",
+      fontSize: 16,
+      fontWeight: "bold",
+    },
+secondaryButton: {
+    marginLeft: 10,
+    backgroundColor: "transparent",
+    borderColor: "white",
+    borderWidth: 1,
+  },
+secondaryButtonText: {
+    color: "white",
+  },
+});
