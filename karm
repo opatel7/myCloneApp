@@ -1,0 +1,21 @@
+const handleAlert = () => {
+    Alert.alert("Alert Button pressed");
+  };
+<View style={styles.alertButton}>
+          <Button title="Alert" onPress={handleAlert} color="red" />
+        </View>
+      </LinearGradient>
+
+      <View>
+        <TouchableOpacity>
+          <Image
+            source={require("../myCloneApp/assets/photos/bottombar.jpg")}
+            style={{
+              width: "100%",
+              height: 50,
+              position: "absolute",
+              marginTop: 30,
+            }}
+          />
+        </TouchableOpacity>
+      </View>
