@@ -1,0 +1,96 @@
+<View style={styles.icons}>
+          <Image
+            source={require("../myCloneApp/assets/photos/photo.jpg")}
+            style={styles.iconImage}
+          />
+          <Image
+            source={require("../myCloneApp/assets/photos/reel.png")}
+            style={styles.iconImage}
+          />
+          <Image
+            source={require("../myCloneApp/assets/photos/saved.png")}
+            style={styles.iconImage}
+          />
+        </View>
+
+        <View style={styles.imageGrid}>
+          <Image
+            source={{
+              uri: "https://www.shutterstock.com/image-photo/motivational-quotes-never-give-on-600w-2240387883.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://wallpapersok.com/images/hd/do-it-now-black-and-white-quotes-en7gkn3mjx4plytk.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://static.vecteezy.com/system/resources/previews/006/490/793/non_2x/a-modern-typography-quotes-if-you-never-try-you-never-know-inspirational-design-calligraphy-motivational-good-quotes-in-white-background-free-vector.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfj0r7OpwPaUo3ybQFjntMUZjudpW4qhPJEw&s",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS480HYLkKXl0hFGYiOeE4pU2to2vk5lHJj1w&s",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://i.pinimg.com/736x/8f/16/b3/8f16b39b57c6d26691f06d7eea4a0c3d.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://www.shutterstock.com/image-photo/motivational-quotes-never-give-on-600w-2240387883.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://wallpapersok.com/images/hd/do-it-now-black-and-white-quotes-en7gkn3mjx4plytk.jpg",
+            }}
+            style={styles.gridImage}
+          />
+          <Image
+            source={{
+              uri: "https://static.vecteezy.com/system/resources/previews/006/490/793/non_2x/a-modern-typography-quotes-if-you-never-try-you-never-know-inspirational-design-calligraphy-motivational-good-quotes-in-white-background-free-vector.jpg",
+            }}
+            style={styles.gridImage}
+          />
+        </View>
+
+icons: {
+    flexDirection: "row",
+    marginVertical: 10,
+    justifyContent: "space-between",
+  },
+
+iconImage: {
+    width: "32%",
+    height: 30,
+    marginBottom: 5,
+    resizeMode: "contain",
+  },
+
+imageGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+
+gridImage: {
+    width: "32%",
+    height: 120,
+    marginBottom: 5,
+  },
